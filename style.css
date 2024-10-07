@@ -5,7 +5,6 @@
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
     background-color: #f0f4f8; /* Fundo suave azul claro */
     display: flex;
     justify-content: center;
@@ -14,14 +13,26 @@ body {
 }
 
 section {
-    background-color: #6ab7d6; /* Azul agradável */
     padding: 40px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 p {
     font-size: 24px;
-    color: #ffffff; /* Texto branco */
     text-align: center;
+}
+
+.texto-formatado {
+    font-family: 'Pacifico', cursive; /* Fonte nova e estilosa */
+    font-size: 36px; /* Tamanho grande para destaque */
+    color: #ff6347; /* Cor vibrante, vermelho alaranjado */
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Sombra no texto para profundidade */
+    transition: transform 0.3s ease; /* Efeito suave ao passar o mouse */
+    cursor: pointer;
+}
+
+.texto-formatado:hover {
+    transform: scale(1.05); /* Aumenta ligeiramente ao passar o mouse */
 }
