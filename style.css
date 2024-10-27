@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -16,11 +17,6 @@ section {
     padding: 40px;
 }
 
-p {
-    font-size: 24px;
-    text-align: center;
-}
-
 .texto-formatado {
     font-family: 'Pacifico', cursive; /* Fonte nova e estilosa */
     font-size: 36px; /* Tamanho grande para destaque */
@@ -35,4 +31,25 @@ p {
 
 .texto-formatado:hover {
     transform: scale(1.05); /* Aumenta ligeiramente ao passar o mouse */
+}
+
+#principal p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 3rem;
+    font-weight: 100;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid black;
+    width: 20ch; /* ajuste para o número de caracteres */
+    animation: typing 3s steps(20), blink 0.5s step-end infinite alternate;
+}
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 20ch; }
+}
+
+@keyframes blink {
+    from { border-color: transparent; }
+    to { border-color: black; }
 }
