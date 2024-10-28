@@ -18,13 +18,14 @@ section {
 }
 
 .texto-formatado {
-    font-family: 'Pacifico', cursive; /* Fonte nova e estilosa */
-    font-size: 36px; /* Tamanho grande para destaque */
-    color: #ff6347; /* Cor vibrante, vermelho alaranjado */
-    background-color: #ffffff;
-    padding: 20px;
-    border-radius: 8px;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Sombra no texto para profundidade */
+    font-family: 'Roboto', sans-serif;
+    font-size: 3rem;
+    font-weight: 100;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid black;
+    width: 30ch; /* ajuste para o número de caracteres */
+    animation: typing 3s steps(30), blink 0.5s step-end infinite alternate;
     transition: transform 0.3s ease; /* Efeito suave ao passar o mouse */
     cursor: pointer;
 }
@@ -33,20 +34,9 @@ section {
     transform: scale(1.05); /* Aumenta ligeiramente ao passar o mouse */
 }
 
-#principal p {
-    font-family: 'Roboto', sans-serif;
-    font-size: 3rem;
-    font-weight: 100;
-    white-space: nowrap;
-    overflow: hidden;
-    border-right: 3px solid black;
-    width: 20ch; /* ajuste para o número de caracteres */
-    animation: typing 3s steps(20), blink 0.5s step-end infinite alternate;
-}
-
 @keyframes typing {
     from { width: 0; }
-    to { width: 20ch; }
+    to { width: 30ch; }
 }
 
 @keyframes blink {
